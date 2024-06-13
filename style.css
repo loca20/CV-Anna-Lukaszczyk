@@ -1,0 +1,135 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-family: "Lato", sans-serif;
+	background-color: #6a6969;
+}
+
+.wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 50px 0;
+	width: 750px;
+	height: 1000px;
+	background-color: #fff;
+}
+
+.header {
+	position: absolute;
+	height: 220px;
+	width: 100%;
+	background-color: transparent;
+	overflow: hidden;
+	z-index: 2;
+}
+
+.layers {
+	position: relative;
+	height: 200px;
+	width: 100%;
+}
+
+.layer-box {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5));
+}
+
+.layer {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.layer1 {
+	background-color: #2e7084;
+	clip-path: polygon(0 0, 100% 0, 100% 70%, 86% 100%, 0% 20%);
+}
+
+.layer2 {
+	width: 101%;
+	background-color: #2e7186;
+	clip-path: polygon(20% 0, 100% 0, 100% 90%);
+}
+
+.layer3 {
+	background-color: #397c90bb;
+	background: linear-gradient(
+		165deg,
+		rgba(57, 124, 144, 1) 54%,
+		rgba(57, 124, 144, 0.01) 100%
+	);
+	clip-path: polygon(0 0, 100% 0, 100% 30%, 64% 96%, 0% 50%);
+}
+
+.header-data {
+	position: absolute;
+	display: flex;
+	left: 56px;
+	top: 20px;
+}
+
+.photo-background {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 186px;
+	width: 150px;
+	border-radius: 3px;
+	background: linear-gradient(
+		90deg,
+		rgba(146, 203, 221, 1) 0%,
+		rgba(34, 89, 105, 1) 100%
+	);
+}
+
+.photo {
+	height: 180px;
+	width: 144px;
+	background-image: url("./CV-photo.jpg");
+	background-position: -76px -26px;
+}
+
+.name-and-contact {
+	margin-left: 100px;
+	color: azure;
+}
+
+.name {
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.fa-solid {
+	margin-right: 10px;
+}
+
+.mail {
+	margin: 10px 0;
+}
+
+.main {
+	top: 500px;
+	height: 100%;
+	width: 65%;
+	background-color: #e1e1e1;
+}
+
+.aside {
+	height: 100%;
+	width: 35%;
+	box-shadow: 2px 0 3px gray;
+	z-index: 1;
+}
